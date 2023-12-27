@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+body {
+  background: linear-gradient(180deg, #0D324D 0%, #755379 20%, #4D4855 40%, #000 60%);
+  background-repeat: no-repeat;
+  background-size: 100% 6200px; /* Adjust this value based on your content length */
+  width: 100%;
+  position: relative;
+}
+
+.intro-phrase {
+  width: 299px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 367px;
+  left: 45px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+.name {
+  width: 375px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 435px;
+  left: 45px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+}
+.introduction {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 536px;
+  left: 45px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.mssql {
+  width: 430px;
+  height: 401px;
+  background: rgba(30,30,30,1);
+  background: url("../images/mssql.png");
+  opacity: 1;
+  position: absolute;
+  top: 1585px;
+  left: 505px;
+  border-radius: 50%;
+}
+.my-expertise {
+  width: 395px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 1086px;
+  left: 45px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+}
+.mongodb {
+  width: 430px;
+  height: 401px;
+  background: rgba(30,30,30,1);
+  background: url("../images/mongodb.png");
+  opacity: 1;
+  position: absolute;
+  top: 1585px;
+  left: 965px;
+  border-radius: 50%;
+}
+.cpp {
+  width: 430px;
+  height: 401px;
+  background: url("../images/cpp.png");
+  opacity: 1;
+  position: absolute;
+  top: 1209px;
+  left: 735px;
+  border-radius: 50%;
+}
+.typescript {
+  width: 430px;
+  height: 401px;
+  background: rgba(49,120,198,1);
+  background-image: url('../images/typescript.png');
+  opacity: 1;
+  position: absolute;
+  top: 1209px;
+  left: 275px;
+  border-radius: 50%;
+}
+.java {
+  width: 430px;
+  height: 401px;
+  background: rgba(30,30,30,1);
+  background-image: url('../images/java.png');
+  opacity: 1;
+  position: absolute;
+  top: 1585px;
+  left: 45px;
+  border-radius: 50%;
+}
+
+
+.my-experience {
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  color: rgba(255,255,255,1);
+  top: 2108px;
+  left: 45px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+} 
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  max-width: 100%; /* Ensure it doesn't exceed the page width */
+  margin: 0 auto; /* Center the timeline */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(180deg, #FFD700 0%, #FFAD60 31.77%, #FFB6C1 65.43%, #B0C4DE 100%);
+  top: 0;
+  height: 95%;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+/* Left items */
+.timeline-item.left {
+  justify-content: flex-start; /* Align to the start (left) */
+}
+
+/* Right items */
+.timeline-item.right {
+  justify-content: flex-end; /* Align to the end (right) */
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff; /* Circle color */
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  margin-left: -10px;
+  z-index: 2; /* Higher z-index for circles */
+}
+
+/* Left items */
+.timeline-item.left .timeline-content {
+  align-self: flex-start;
+  text-align: right;
+  padding-right: 70px; /* Space from the line */
+  max-width: 50%; /* Ensure it doesn't cross the line */
+}
+
+/* Right items */
+.timeline-item.right .timeline-content {
+  align-self: flex-end;
+  text-align: left;
+  padding-left: 70px; /* Space from the line */
+  max-width: 50%; /* Ensure it doesn't cross the line */
+}
+
+.timeline-content {
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-description {
+  margin-bottom: 10px;
+}
