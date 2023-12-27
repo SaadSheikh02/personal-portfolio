@@ -59,15 +59,16 @@ body {
   box-sizing: border-box; /* Include padding in the element's width calculation */
 }
 .mssql {
-  width: 430px;
-  height: 401px;
+  width: 401px;
+  height: 374px;
+  flex-shrink: 0;
+  border-radius: 401px;
   background: rgba(30,30,30,1);
   background: url("../images/mssql.png");
   opacity: 1;
   position: absolute;
   top: 1585px;
   left: 505px;
-  border-radius: 50%;
 }
 .my-expertise {
   width: 395px;
@@ -82,47 +83,51 @@ body {
   text-align: left;
 }
 .mongodb {
-  width: 430px;
-  height: 401px;
+  width: 401px;
+  height: 374px;
+  flex-shrink: 0;
+  border-radius: 401px;
   background: rgba(30,30,30,1);
   background: url("../images/mongodb.png");
   opacity: 1;
   position: absolute;
   top: 1585px;
   left: 965px;
-  border-radius: 50%;
 }
 .cpp {
-  width: 430px;
-  height: 401px;
+  width: 401px;
+  height: 374px;
+  flex-shrink: 0;
+  border-radius: 401px;
   background: url("../images/cpp.png");
   opacity: 1;
   position: absolute;
   top: 1209px;
   left: 735px;
-  border-radius: 50%;
 }
 .typescript {
-  width: 430px;
-  height: 401px;
+  width: 401px;
+  height: 374px;
+  flex-shrink: 0;
+  border-radius: 401px;
   background: rgba(49,120,198,1);
   background-image: url('../images/typescript.png');
   opacity: 1;
   position: absolute;
   top: 1209px;
   left: 275px;
-  border-radius: 50%;
 }
 .java {
-  width: 430px;
-  height: 401px;
+  width: 401px;
+  height: 374px;
+  flex-shrink: 0;
+  border-radius: 401px;
   background: rgba(30,30,30,1);
   background-image: url('../images/java.png');
   opacity: 1;
   position: absolute;
   top: 1585px;
   left: 45px;
-  border-radius: 50%;
 }
 
 
