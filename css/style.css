@@ -12,8 +12,10 @@ body {
   background: linear-gradient(180deg, #0D324D 0%, #755379 20%, #4D4855 40%, #000 60%);
   background-repeat: no-repeat;
   background-size: 100% 6200px; /* Adjust this value based on your content length */
-  width: 100%;
-  position: relative;
+  width: auto; /* Changed from 100% to auto */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Hide horizontal scroll */
 }
 
 .intro-phrase {
@@ -51,6 +53,10 @@ body {
   font-size: 32px;
   opacity: 1;
   text-align: left;
+  width: auto; /* Use 'auto' or a percentage value less than 100% */
+  max-width: calc(100% - 90px); /* Subtract the total left and right padding/margin */
+  padding: 0 45px; /* Add padding if needed, but account for it in the width */
+  box-sizing: border-box; /* Include padding in the element's width calculation */
 }
 .mssql {
   width: 430px;
@@ -143,18 +149,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: calc(100% - 40px); /* Account for any padding or margins */
+  padding: 20px; /* Adjust padding as necessary */
+  box-sizing: border-box; /* Include padding in the element's width calculation */
 }
 
+/* For the timeline line to stop before the bottom edge of the page: */
 .timeline::after {
   content: '';
   position: absolute;
   width: 2px;
   background: linear-gradient(180deg, #FFD700 0%, #FFAD60 31.77%, #FFB6C1 65.43%, #B0C4DE 100%);
   top: 0;
-  height: 95%;
-  bottom: 0;
+  height: calc(100% - 50px); /* Adjust the bottom space */
   left: 50%;
-  margin-left: -1px;
+  transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -202,6 +211,9 @@ body {
   text-align: left;
   padding-left: 70px; /* Space from the line */
   max-width: 50%; /* Ensure it doesn't cross the line */
+  padding-right: 20px; /* Adjust the padding to ensure it fits in the viewport */
+  padding-left: 70px; /* Ensure this padding plus content width doesn't exceed parent width */
+  box-sizing: border-box; /* Include padding in the element's width calculation */
 }
 
 .timeline-content {
