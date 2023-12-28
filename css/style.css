@@ -234,3 +234,70 @@ body {
 .timeline-description {
   margin-bottom: 10px;
 }
+
+/* Existing CSS above, then add media queries for mobile responsiveness */
+
+@media only screen and (max-width: 600px) {
+  .intro-phrase,
+  .name,
+  .introduction,
+  .my-expertise,
+  .my-experience {
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    width: auto;
+  }
+
+  .name {
+    font-size: 48px; /* Smaller font size for the name */
+  }
+
+  .introduction {
+    font-size: 24px; /* Smaller font size for the introduction */
+  }
+
+  .my-expertise,
+  .my-experience {
+    font-size: 48px; /* Smaller font size for section headings */
+  }
+
+  /* Stack expertise icons vertically */
+  .mongodb,
+  .cpp,
+  .mssql,
+  .java,
+  .typescript {
+    width: 300px; /* Smaller circles for mobile */
+    height: 300px;
+    position: static; /* Remove absolute positioning */
+    margin: 20px auto; /* Center and add margin */
+    display: block;
+  }
+
+  /* Adjust the timeline for a single column layout */
+  .timeline {
+    padding: 20px;
+  }
+
+  .timeline::after {
+    left: 20px; /* Position line to the left */
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .timeline-item::after {
+    left: 20px; /* Position circles to the left */
+  }
+
+  .timeline-item.left .timeline-content,
+  .timeline-item.right .timeline-content {
+    align-self: center;
+    text-align: center;
+    padding: 0; /* Remove padding */
+    max-width: none; /* Allow full width */
+  }
+}
