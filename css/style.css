@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+@import 'animate.css';
 * {
   box-sizing: border-box;
 }
@@ -29,6 +30,9 @@ body {
   font-size: 36px;
   opacity: 1;
   text-align: left;
+
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 .name {
   width: 375px;
@@ -41,6 +45,9 @@ body {
   font-size: 64px;
   opacity: 1;
   text-align: left;
+
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 .introduction {
   width: 100%;
@@ -57,6 +64,9 @@ body {
   max-width: calc(100% - 90px); /* Subtract the total left and right padding/margin */
   padding: 0 45px; /* Add padding if needed, but account for it in the width */
   box-sizing: border-box; /* Include padding in the element's width calculation */
+
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 .mssql {
   width: 401px;
@@ -80,6 +90,9 @@ body {
   font-size: 64px;
   opacity: 1;
   text-align: left;
+
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 .expertise-bubbles{
   display: flex;
@@ -98,6 +111,9 @@ body {
   max-width: calc(100% - 90px); /* Subtract the total left and right padding/margin */
   padding: 0 45px; /* Add padding if needed, but account for it in the width */
   box-sizing: border-box; /* Include padding in the element's width calculation */
+
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 .mongodb {
   width: 401px;
@@ -183,6 +199,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 
 .timeline-item {
@@ -190,6 +209,9 @@ body {
   width: 100%;
   display: flex;
   margin-bottom: 50px;
+
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 
 /* Left items */
